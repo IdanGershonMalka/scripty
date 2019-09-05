@@ -19,15 +19,16 @@ def save():
 def run():
 	save()
 	result = os.system('python3 ' + currFile)
-	#resultWindow = Tk()
-	#resultWindow.geometry("550x350")
-	#resultWindow.resizable(0,0)
-	#resultText = Text(resultWindow)
-	#for line in result:
-        #    resultText.insert(INSERT, line)
-	#resultText.grid(column = 0, row = 0)
-	#resultWindow.mainloop()
-
+	'''
+	resultWindow = Tk()
+	resultWindow.geometry("550x350")
+	resultWindow.resizable(0,0)
+	resultText = Text(resultWindow)
+	for line in result:
+        resultText.insert(INSERT, line)
+	resultText.grid(column = 0, row = 0)
+	resultWindow.mainloop()
+	'''
 
 runBtn = Button(window, text = "Run", command = lambda: run())
 runBtn.grid(column = 0, row = 0)
